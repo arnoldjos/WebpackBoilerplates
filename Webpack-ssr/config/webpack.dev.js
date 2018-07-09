@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
@@ -101,10 +100,6 @@ module.exports = {
         NODE_ENV: JSON.stringify('development')
       }
     }),
-    // new HTMLWebpackPlugin({
-    //   template: './src/index.html',
-    //   inject: true
-    // }),
     new BundleAnalyzerPlugin({
       generateStatsFile: true,
       openAnalyzer: false

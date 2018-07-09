@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-// import MarkdownData from '../data/post.md';
+import MarkdownData from '../data/post.md';
 
 class AppRoot extends Component {
   render() {
     return (
       <div className="profile">
-        <img src={''} alt="Witcher" />
-        <h1>Title</h1>
+        <img src={require('../images/witcher.jpg')} alt="Witcher" />
+        <h1>{MarkdownData.title}</h1>
         <div
-          dangerouslySetInnerHTML={{ __html: '<h1>Heading</h1>' }}
+          dangerouslySetInnerHTML={{ __html: MarkdownData.__content }}
           className="content"
         />
       </div>

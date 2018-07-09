@@ -37,14 +37,16 @@ server.use(
 
 server.get('*', (req, res) => {
   res.send(`
-		<!DOCTYPE html>
 		<html lang="en">
 		<head>
 			<link href="main.css" rel="stylesheet" />
+			<title>Hello World</title>
 		</head>
 		<body>
 			<div id="root">
+				${ReactDOMServer.renderToString(<AppRoot />)}
 			</div>
+			<script src="vendor-bundle.js"></script>
 			<script src="main-bundle.js"></script>
 		</body>
 		</html>
