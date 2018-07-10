@@ -1,61 +1,61 @@
 import express from 'express';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+
 import path from 'path';
-import AppRoot from '../components/AppRoot';
+import expressStaticGzip from 'express-static-gzip';
+import webpack from 'webpack';
+import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
+
+import configDevClient from '../../config/webpack.dev-client.js';
+import configDevServer from '../../config/webpack.dev-server.js';
+import configProdClient from '../../config/webpack.prod-client.js';
+import configProdServer from '../../config/webpack.prod-server.js';
 
 const server = express();
 
 const isProd = process.env.NODE_ENV === 'production';
-if (!isProd) {
-  const webpack = require('webpack');
-  const config = require('../../config/webpack.dev.js');
-  const compiler = webpack(config);
+const isDev = !isProd;
+if (isDev) {
+	const compiler = webpack([configDevClient, configDevServer]);
 
-  const webpackDevMiddleware = require('webpack-dev-middleware')(
-    compiler,
-    config.devServer
-  );
+	const clientCompiler = compiler.compilers[0];
+	const serverCompiler = compiler.compilers[1];
 
-  const webpackHotMiddlware = require('webpack-hot-middleware')(
-    compiler,
-    config.devServer
-  );
+	const webpackDevMiddleware = require('webpack-dev-middleware')(
+		compiler,
+		configDevClient.devServer
+	);
 
-  server.use(webpackDevMiddleware);
-  server.use(webpackHotMiddlware);
-  console.log('Middleware enabled');
+	const webpackHotMiddlware = require('webpack-hot-middleware')(
+		clientCompiler,
+		configDevClient.devServer
+	);
+
+	server.use(webpackDevMiddleware);
+	server.use(webpackHotMiddlware);
+	server.use(webpackHotServerMiddleware(compiler));
+	console.log('Middleware enabled');
+} else {
+	webpack([configProdClient, configProdServer]).run((err, stats) => {
+		const clientStats = stats.toJson().children[0];
+		console.log(
+			stats.toString({
+				colors: true
+			})
+		);
+
+		const render = require('../../build/prod-server-bundle.js').default;
+		server.use(
+			expressStaticGzip('dist', {
+				enableBrotli: true
+			})
+		);
+		server.use(render({ clientStats }));
+	});
 }
 
-// const staticMiddleware = express.static('dist');
-const expressStaticGzip = require('express-static-gzip');
-server.use(
-  expressStaticGzip('dist', {
-    enableBrotli: true
-  })
-);
-
-server.get('*', (req, res) => {
-  res.send(`
-		<html lang="en">
-		<head>
-			<link href="main.css" rel="stylesheet" />
-			<title>Hello World</title>
-		</head>
-		<body>
-			<div id="root">
-				${ReactDOMServer.renderToString(<AppRoot />)}
-			</div>
-			<script src="vendor-bundle.js"></script>
-			<script src="main-bundle.js"></script>
-		</body>
-		</html>
-	`);
-});
-
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 server.listen(PORT, () => {
-  console.log(
-    `Server listening on http://localhost:${PORT} in ${process.env.NODE_ENV}`
-  );
+	console.log(
+		`Server listening on http://localhost:${PORT} in ${process.env.NODE_ENV}`
+	);
 });

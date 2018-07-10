@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import MarkdownData from '../data/post.md';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-class AppRoot extends Component {
-  render() {
-    return (
-      <div className="profile">
-        <img src={require('../images/witcher.jpg')} alt="Witcher" />
-        <h1>{MarkdownData.title}</h1>
-        <div
-          dangerouslySetInnerHTML={{ __html: MarkdownData.__content }}
-          className="content"
-        />
-      </div>
-    );
-  }
+import Routes from './Routes';
+
+export default class extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+
+	render() {
+		return (
+			<BrowserRouter>
+				<Routes />
+			</BrowserRouter>
+		);
+	}
 }
-
-export default AppRoot;
