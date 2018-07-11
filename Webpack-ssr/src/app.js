@@ -1,21 +1,25 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import AppRoot from "./components/AppRoot"
-import { AppContainer } from "react-hot-loader"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import AppRoot from './components/AppRoot';
+import { AppContainer } from 'react-hot-loader';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function render(Component) {
-  ReactDOM.hydrate(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
-    document.getElementById("react-root")
-  )
+	ReactDOM.hydrate(
+		<Provider store={store}>
+			<AppContainer>
+				<Component />
+			</AppContainer>
+		</Provider>,
+		document.getElementById('react-root')
+	);
 }
-render(AppRoot)
+render(AppRoot);
 
 if (module.hot) {
-  module.hot.accept("./components/AppRoot.js", () => {
-    const NewAppRoot = require("./components/AppRoot.js").default
-    render(NewAppRoot)
-  })
+	module.hot.accept('./components/AppRoot.js', () => {
+		const NewAppRoot = require('./components/AppRoot.js').default;
+		render(NewAppRoot);
+	});
 }
