@@ -1,53 +1,56 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-import { fetchArticle } from '../store/actions/';
+import React from 'react';
 import '../css/Article.css';
 import NotFound from './NotFound';
+import { connect } from 'react-redux';
+import { fetchArticle } from '../store/actions';
+import Spinner from './Spinner';
 
-class Article extends Component {
-	constructor(props) {
-		super(props);
-	}
+class Article extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-	componentDidMount() {
-		this.props.fetchArticle(this.props.site, this.props.match.params.slug);
-	}
+  componentDidMount() {
+    this.props.fetchArticle(this.props.site, this.props.match.params.slug);
+  }
 
-	render() {
-		const siteConfig = require(`../../data/${this.props.site}/siteConfig`);
-		import(`../css/${this.props.site}/theme.css`);
-		// const MarkdownData = require(`../../data/${props.site}/${
-		// 	props.match.params.slug
-		// }.md`);
-		// const posterStyle = {
-		// 	backgroundImage: `url(${MarkdownData.posterImage}`
-		// };
-		return (
-			<div>
-				<div className="Article">
-					{/* <div className="poster" style={posterStyle} /> */}
-					<h1>{this.props.text}</h1>
-					<div
-						className="content"
-						dangerouslySetInnerHTML={{ __html: this.props.content }}
-					/>
-				</div>
-			</div>
-		);
-	}
+  // componentWillReceiveProps(props) {
+  //   this.props.fetchArticle(props.site, props.match.params.slug);
+  // }
+
+  render() {
+    try {
+      const billboardStyle = {
+        backgroundImage: `url(${this.props.article.posterImage})`
+      };
+      import(`../css/${this.props.site}/theme.css`);
+
+      return (
+        <div className="Article">
+          <div className="billboard" style={billboardStyle} />
+          <h1>{this.props.article.title}</h1>
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: this.props.article.__content }}
+          />
+        </div>
+      );
+    } catch (error) {
+      return <NotFound />;
+    }
+  }
 }
 
 const mapStateToProps = state => ({
-	text: state.article.content,
-	content: state.article.content
+  article: state.article.content
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchArticle: (site, slug) => dispatch(fetchArticle(site, slug))
+  fetchArticle: (site, slug) => dispatch(fetchArticle(site, slug))
 });
 
 export default connect(
-	mapStateToProps,
-	mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Article);
