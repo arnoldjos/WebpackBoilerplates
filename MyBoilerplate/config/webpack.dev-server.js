@@ -7,7 +7,7 @@ module.exports = {
 	name: 'server',
 	target: 'node',
 	externals,
-	entry: './src/server/render.js',
+	entry: './server/renderer.js',
 	mode: 'development',
 	output: {
 		filename: 'dev-server-bundle.js',
@@ -37,6 +37,23 @@ module.exports = {
 				}
 			},
 			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: 'css-loader',
+						options: {
+							minimize: true
+						}
+					},
+					{
+						loader: 'postcss-loader'
+					},
+					{
+						loader: 'sass-loader'
+					}
+				]
+			},
+			{
 				test: /\.(jpg|png|gif)$/,
 				use: [
 					{
@@ -45,14 +62,6 @@ module.exports = {
 							name: '/images/[name].[ext]',
 							emitFile: false
 						}
-					}
-				]
-			},
-			{
-				test: /\.md$/,
-				use: [
-					{
-						loader: 'markdown-with-front-matter-loader'
 					}
 				]
 			}

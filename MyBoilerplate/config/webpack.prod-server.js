@@ -1,21 +1,18 @@
 const path = require('path');
 const webpack = require('webpack');
 const externals = require('./node-externals');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = {
 	name: 'server',
 	target: 'node',
-	externals,
+	externals: externals,
 	entry: './src/server/render.js',
-	mode: 'development',
+	mode: 'production',
 	output: {
-		filename: 'dev-server-bundle.js',
-		chunkFilename: '[name].js',
+		filename: 'prod-server-bundle.js',
 		path: path.resolve(__dirname, '../build'),
 		libraryTarget: 'commonjs2'
 	},
-	devtool: 'inline-sourcemaps',
 	module: {
 		rules: [
 			{
@@ -37,35 +34,43 @@ module.exports = {
 				}
 			},
 			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: 'css-loader',
+						options: {
+							minimize: true
+						}
+					},
+					{
+						loader: 'postcss-loader'
+					},
+					{
+						loader: 'sass-loader'
+					}
+				]
+			},
+			{
 				test: /\.(jpg|png|gif)$/,
 				use: [
 					{
 						loader: 'file-loader',
 						options: {
-							name: '/images/[name].[ext]',
+							name: 'images/[name].[ext]',
 							emitFile: false
 						}
-					}
-				]
-			},
-			{
-				test: /\.md$/,
-				use: [
-					{
-						loader: 'markdown-with-front-matter-loader'
 					}
 				]
 			}
 		]
 	},
 	plugins: [
-		new FriendlyErrorsWebpackPlugin(),
 		new webpack.optimize.LimitChunkCountPlugin({
 			maxChunks: 1
 		}),
 		new webpack.DefinePlugin({
 			'process.env': {
-				NODE_ENV: JSON.stringify('development')
+				NODE_ENV: JSON.stringify('production')
 			}
 		})
 	]

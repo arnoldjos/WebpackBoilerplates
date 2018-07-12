@@ -10,35 +10,35 @@ import { Provider } from 'react-redux';
 import { fetchArticle } from '../store/actions';
 
 export default ({ clientStats }) => (req, res) => {
-  const site = req.hostname.split('.')[0];
-  const slug = req.url.split('/').reverse()[0];
+	const site = req.hostname.split('.')[0];
+	const slug = req.path.split('/').reverse()[0];
 
-  const context = { site };
+	const context = { site };
 
-  const store = configureStore();
+	const store = configureStore();
 
-  const loadArticle = (site, slug) => {
-    return store.dispatch(fetchArticle(site, slug));
-  };
+	const loadArticle = (site, slug) => {
+		return store.dispatch(fetchArticle(site, slug));
+	};
 
-  const app = () =>
-    renderToString(
-      <Provider store={store}>
-        <StaticRouter location={req.url} context={context}>
-          <Routes />
-        </StaticRouter>
-      </Provider>
-    );
+	const app = () =>
+		renderToString(
+			<Provider store={store}>
+				<StaticRouter location={req.path} context={context}>
+					<Routes />
+				</StaticRouter>
+			</Provider>
+		);
 
-  const template = () => {
-    const appOutput = app();
-    const names = flushChunkNames().concat([`css/${site}-theme-css`]);
+	const template = () => {
+		const appOutput = app();
+		const names = flushChunkNames().concat([`css/${site}-theme-css`]);
 
-    const { js, styles, cssHash } = flushChunks(clientStats, {
-      chunkNames: names
-    });
+		const { js, styles, cssHash } = flushChunks(clientStats, {
+			chunkNames: names
+		});
 
-    return `
+		return `
       <html>
         <head>
           ${styles}
@@ -53,14 +53,14 @@ export default ({ clientStats }) => (req, res) => {
         </body>
       </html>
     `;
-  };
+	};
 
-  if (req.path.match(/^\/article\//)) {
-    const promise = loadArticle(site, slug);
-    promise.then(_ => {
-      res.send(template());
-    });
-  } else {
-    res.send(template());
-  }
+	if (req.path.match(/^\/article\//)) {
+		const promise = loadArticle(site, slug);
+		promise.then(_ => {
+			res.send(template());
+		});
+	} else {
+		res.send(template());
+	}
 };

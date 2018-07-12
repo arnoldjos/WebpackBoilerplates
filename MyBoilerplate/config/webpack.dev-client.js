@@ -51,6 +51,23 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: ExtractCssChunks.loader
+					},
+					{
+						loader: 'css-loader'
+					},
+					{
+						loader: 'postcss-loader'
+					},
+					{
+						loader: 'sass-loader'
+					}
+				]
+			},
+			{
 				test: /\.(jpg|gif|png)$/,
 				use: [
 					{
@@ -58,14 +75,6 @@ module.exports = {
 						options: {
 							name: 'images/[name].[ext]'
 						}
-					}
-				]
-			},
-			{
-				test: /\.md$/,
-				use: [
-					{
-						loader: 'markdown-with-front-matter-loader'
 					}
 				]
 			}
