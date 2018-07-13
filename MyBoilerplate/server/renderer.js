@@ -3,56 +3,48 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 import { Capture } from 'react-loadable';
 import { getBundles } from 'react-loadable/webpack';
+import { flushChunkNames } from 'react-universal-component/server';
+import flushChunks from 'webpack-flush-chunks';
 
-import stats from '../dist/react-loadable.json';
 import Layout from '../src/components/Layout/Layout';
 
-export default () => (req, res) => {
-  const context = {};
+export default ({ clientStats }) => (req, res) => {
+	const context = {};
 
-  let modules = [];
+	let modules = [];
 
-  const app = renderToString(
-    <StaticRouter location={req.url} context={context}>
-      <Capture report={moduleName => modules.push(moduleName)}>
-        <Layout />
-      </Capture>
-    </StaticRouter>
-  );
+	const app = renderToString(
+		<StaticRouter location={req.url} context={context}>
+			<Layout />
+		</StaticRouter>
+	);
 
-  let bundles = getBundles(stats, modules);
+	const { js, styles } = flushChunks(clientStats, {
+		chunkNames: flushChunkNames()
+	});
 
-  let styles = bundles.filter(bundle => bundle.file.endsWith('.css'));
-  let scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
-
-  const html = ` 
+	const html = `
 	<html lang="en">
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 			<title>Document</title>
-			<link href="/main.css" rel="stylesheet" />
-			${styles
-        .map(style => {
-          return `<link href="${style.publicPath}" rel="stylesheet"/>`;
-        })
-        .join('\n')}
-				
+			${styles}
+
 		</head>
 		<body>
 			<div id="root">${app}</div>
-			
-			<script src="/vendor.js"></script>
-			${scripts
-        .map(script => {
-          return `<script src="${script.publicPath}"></script>`;
-        })
-        .join('\n')}
-			
-			<script src="/main.js"></script>
+
+			${js}
+      <script>
+        ${JSON.stringify(clientStats)}
+      </script>
+      <script>
+        ${JSON.stringify(flushChunkNames())}
+      </script>
 		</body>
 		</html>
 	`;
-  res.send(html);
+	res.send(html);
 };

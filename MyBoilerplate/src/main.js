@@ -7,14 +7,12 @@ import Loadable from 'react-loadable';
 import './main.scss';
 
 function render(Component) {
-	Loadable.preloadReady().then(() => {
-		ReactDOM.hydrate(
-			<AppContainer>
-				<Component />
-			</AppContainer>,
-			document.getElementById('root')
-		);
-	});
+	ReactDOM.hydrate(
+		<AppContainer>
+			<Component />
+		</AppContainer>,
+		document.getElementById('root')
+	);
 }
 render(App);
 

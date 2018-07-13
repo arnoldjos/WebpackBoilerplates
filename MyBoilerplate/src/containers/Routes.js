@@ -1,25 +1,25 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { Switch } from 'react-router';
+import universal from 'react-universal-component';
+
 import Spinner from '../components/UI/Spinner';
 
-import Loadable from 'react-loadable';
-
-const About = Loadable({
-  loader: () => import('./About/About'),
-  loading: Spinner,
-  delay: 200
-});
-
-const Home = Loadable({
-  loader: () => import('./Home/Home'),
-  loading: Spinner,
-  delay: 200
+const UniversalComponent = universal(props => import(`./${props.page}`), {
+	loading: Spinner,
+	minDelay: 400
 });
 
 export default () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
-  </Switch>
+	<Switch>
+		<Route path="/about">
+			<UniversalComponent page="About" />
+		</Route>
+		<Route path="/hello">
+			<UniversalComponent page="Contact" />
+		</Route>
+		<Route path="/">
+			<UniversalComponent page="Article" />
+		</Route>
+	</Switch>
 );

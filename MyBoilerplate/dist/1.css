@@ -1,1 +1,0 @@
-.About{display:grid;grid-template-columns:1fr 1fr;background-color:bisque}.About .banner{grid-column:1/3;grid-column-gap:20px}.About .banner img{width:100%;height:auto}

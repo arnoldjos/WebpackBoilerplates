@@ -1,12 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
-const nodeExternals = require('webpack-node-externals')
+const nodeExternals = require('./node-externals');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = {
 	name: 'server',
 	target: 'node',
-	externals: nodeExternals(),
+	externals: nodeExternals,
 	entry: './server/renderer.js',
 	mode: 'development',
 	output: {
