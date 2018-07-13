@@ -1,27 +1,24 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import universal from 'react-universal-component';
 import { Switch } from 'react-router';
 import Spinner from '../components/UI/Spinner';
-import Auxil from '../hoc/Auxil';
 
-const UniversalComponent = universal(props => import(`./${props.page}`), {
+import Loadable from 'react-loadable';
+
+const Home = Loadable({
+	loader: () => import('./Home'),
+	loading: Spinner,
+	delay: 300
+});
+const About = Loadable({
+	loader: () => import('./About'),
 	loading: <Spinner />,
-	minDelay: 500
+	delay: 300
 });
 
 export default () => (
-	<Auxil>
-		<Navbar />
-		<div className="content">
-			<Switch>
-				<Route exact path="/about">
-					<UniversalComponent page="About" />
-				</Route>
-				<Route exact path="/">
-					<UniversalComponent page="Home" />
-				</Route>
-			</Switch>
-		</div>
-	</Auxil>
+	<Switch>
+		<Route exact path="/about" component={Home} />
+		<Route exact path="/" componenent={About} />
+	</Switch>
 );

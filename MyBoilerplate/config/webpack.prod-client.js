@@ -5,6 +5,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+import { ReactLoadablePlugin } from 'react-loadable/webpack';
 
 module.exports = {
 	name: 'client',
@@ -84,6 +85,9 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new ReactLoadablePlugin({
+			filename: './dist/react-loadable.json'
+		}),
 		new ExtractCssChunks(),
 		new OptimizeCssAssetsPlugin({
 			assetNameRegExp: /\.css$/g,

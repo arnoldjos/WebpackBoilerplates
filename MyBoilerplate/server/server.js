@@ -3,6 +3,7 @@ import express from 'express';
 const expressStaticGzip = require('express-static-gzip');
 import webpack from 'webpack';
 import webpackHotServerMiddleware from 'webpack-hot-server-middleware';
+import Loadable from 'react-loadable';
 
 import configDevClient from '../config/webpack.dev-client.js';
 import configDevServer from '../config/webpack.dev-server.js';
@@ -17,11 +18,16 @@ let server = express();
 
 const done = () => {
 	if (isBuilt) return;
-	server.listen(PORT, () => {
-		isBuilt = true;
-		console.log(
-			`Server listening on http://localhost:${PORT} in ${process.env.NODE_ENV}`
-		);
+
+	Loadable.preloadAll().then(() => {
+		server.listen(PORT, () => {
+			isBuilt = true;
+			console.log(
+				`Server listening on http://localhost:${PORT} in ${
+					process.env.NODE_ENV
+				}`
+			);
+		});
 	});
 };
 

@@ -11,5 +11,9 @@
 		"react",
 		"stage-2"
 	],
-	"plugins": ["transform-runtime", "react-hot-loader/babel", "universal-import"]
+	"plugins": [
+		"react-loadable/babel",
+		"transform-runtime",
+		"react-hot-loader/babel"
+	]
 }

@@ -1,23 +1,29 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
+import { Capture } from 'react-loadable';
+import { getBundles } from 'react-loadable/webpack';
 
-import { flushChunkNames } from 'react-universal-component/server';
-import flushChunks from 'webpack-flush-chunks';
+import stats from '../dist/react-loadable.json';
 import Layout from '../src/components/Layout/Layout';
-import Routes from '../src/pages/Routes';
 
 export default ({ clientStats }) => (req, res) => {
 	const context = {};
-	const { js, styles } = flushChunks(clientStats, {
-		chunkNames: flushChunkNames()
-	});
+
+	let modules = [];
 
 	const app = renderToString(
-		<StaticRouter location={req.path} context={context}>
-			<Routes />
-		</StaticRouter>
+		<Capture report={moduleName => modules.push(moduleName)}>
+			<StaticRouter location={req.path} context={context}>
+				<Layout />
+			</StaticRouter>
+		</Capture>
 	);
+
+	let bundles = getBundles(stats, modules);
+
+	let styles = bundles.filter(bundle => bundle.file.endsWith('.css'));
+	let scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
 
 	const html = `
 		<!DOCTYPE html>
@@ -28,16 +34,20 @@ export default ({ clientStats }) => (req, res) => {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 			<title>Document</title>
-			${styles}
+			${styles
+				.map(style => {
+					return `<link href="${style.publicPath}" rel="stylesheet"/>`;
+				})
+				.join('\n')}
 		</head>
 		<body>
 			<div id="root">${app}</div>
-			${js}
-			<script>
-				var chunknames = ${JSON.stringify(
-					flushChunks(clientStats, { chunkNames: flushChunkNames() })
-				)}
-			</script>
+			${scripts
+				.map(script => {
+					return `<script src="${script.publicPath}"></script>`;
+				})
+				.join('\n')}
+			<script src="/main-bundle.js"></script>
 		</body>
 		</html>
 	`;

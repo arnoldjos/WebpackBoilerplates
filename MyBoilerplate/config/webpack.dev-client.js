@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+import { ReactLoadablePlugin } from 'react-loadable/webpack';
 
 module.exports = {
 	name: 'client',
@@ -83,6 +84,9 @@ module.exports = {
 	plugins: [
 		new FriendlyErrorsWebpackPlugin(),
 		new ExtractCssChunks({ hot: true }),
+		new ReactLoadablePlugin({
+			filename: './dist/react-loadable.json'
+		}),
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('development'),
