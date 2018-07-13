@@ -11,7 +11,6 @@ module.exports = {
 	mode: 'development',
 	output: {
 		filename: 'dev-server-bundle.js',
-		chunkFilename: '[name].js',
 		path: path.resolve(__dirname, '../build'),
 		libraryTarget: 'commonjs2'
 	},

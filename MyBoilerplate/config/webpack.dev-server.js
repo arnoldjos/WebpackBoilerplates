@@ -7,7 +7,9 @@ module.exports = {
 	name: 'server',
 	target: 'node',
 	externals,
-	entry: './server/renderer.js',
+	entry: {
+		main: './server/renderer.js'
+	},
 	mode: 'development',
 	output: {
 		filename: 'dev-server-bundle.js',
