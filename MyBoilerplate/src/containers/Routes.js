@@ -6,19 +6,19 @@ import Spinner from '../components/UI/Spinner';
 import Loadable from 'react-loadable';
 
 const Home = Loadable({
-	loader: () => import('./Home'),
-	loading: Spinner,
-	delay: 300
+  loader: () => import('./Home/Home'),
+  loading: Spinner,
+  delay: 200
 });
 const About = Loadable({
-	loader: () => import('./About'),
-	loading: <Spinner />,
-	delay: 300
+  loader: () => import('./About/About'),
+  loading: Spinner,
+  delay: 200
 });
 
 export default () => (
-	<Switch>
-		<Route exact path="/about" component={Home} />
-		<Route exact path="/" componenent={About} />
-	</Switch>
+  <Switch>
+    <Route path="/about" component={About} />
+    <Route exact path="/" component={Home} />
+  </Switch>
 );

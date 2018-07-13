@@ -1,52 +1,52 @@
 {
-  "./About": [
+  "./About/About": [
     {
-      "id": "./src/pages/About.js",
-      "name": "./src/pages/About.js",
+      "id": "./src/containers/About/About.js",
+      "name": "./src/containers/About/About.js",
       "file": "0.css",
       "publicPath": "/0.css"
     },
     {
-      "id": "./src/pages/About.js",
-      "name": "./src/pages/About.js",
+      "id": "./src/containers/About/About.js",
+      "name": "./src/containers/About/About.js",
       "file": "0.js",
       "publicPath": "/0.js"
     },
     {
-      "id": "./src/pages/About.js",
-      "name": "./src/pages/About.js",
+      "id": "./src/containers/About/About.js",
+      "name": "./src/containers/About/About.js",
       "file": "0.css.map",
       "publicPath": "/0.css.map"
     },
     {
-      "id": "./src/pages/About.js",
-      "name": "./src/pages/About.js",
+      "id": "./src/containers/About/About.js",
+      "name": "./src/containers/About/About.js",
       "file": "0.js.map",
       "publicPath": "/0.js.map"
     }
   ],
-  "./styles/About.scss": [
+  "./About.scss": [
     {
-      "id": "./src/pages/styles/About.scss",
-      "name": "./src/pages/styles/About.scss",
+      "id": "./src/containers/About/About.scss",
+      "name": "./src/containers/About/About.scss",
       "file": "0.css",
       "publicPath": "/0.css"
     },
     {
-      "id": "./src/pages/styles/About.scss",
-      "name": "./src/pages/styles/About.scss",
+      "id": "./src/containers/About/About.scss",
+      "name": "./src/containers/About/About.scss",
       "file": "0.js",
       "publicPath": "/0.js"
     },
     {
-      "id": "./src/pages/styles/About.scss",
-      "name": "./src/pages/styles/About.scss",
+      "id": "./src/containers/About/About.scss",
+      "name": "./src/containers/About/About.scss",
       "file": "0.css.map",
       "publicPath": "/0.css.map"
     },
     {
-      "id": "./src/pages/styles/About.scss",
-      "name": "./src/pages/styles/About.scss",
+      "id": "./src/containers/About/About.scss",
+      "name": "./src/containers/About/About.scss",
       "file": "0.js.map",
       "publicPath": "/0.js.map"
     }
@@ -233,54 +233,54 @@
       "publicPath": "/vendor-bundle.js.map"
     }
   ],
-  "./Home": [
+  "./Home/Home": [
     {
-      "id": "./src/pages/Home.js",
-      "name": "./src/pages/Home.js",
+      "id": "./src/containers/Home/Home.js",
+      "name": "./src/containers/Home/Home.js",
       "file": "1.css",
       "publicPath": "/1.css"
     },
     {
-      "id": "./src/pages/Home.js",
-      "name": "./src/pages/Home.js",
+      "id": "./src/containers/Home/Home.js",
+      "name": "./src/containers/Home/Home.js",
       "file": "1.js",
       "publicPath": "/1.js"
     },
     {
-      "id": "./src/pages/Home.js",
-      "name": "./src/pages/Home.js",
+      "id": "./src/containers/Home/Home.js",
+      "name": "./src/containers/Home/Home.js",
       "file": "1.css.map",
       "publicPath": "/1.css.map"
     },
     {
-      "id": "./src/pages/Home.js",
-      "name": "./src/pages/Home.js",
+      "id": "./src/containers/Home/Home.js",
+      "name": "./src/containers/Home/Home.js",
       "file": "1.js.map",
       "publicPath": "/1.js.map"
     }
   ],
-  "./styles/Home.scss": [
+  "./Home.scss": [
     {
-      "id": "./src/pages/styles/Home.scss",
-      "name": "./src/pages/styles/Home.scss",
+      "id": "./src/containers/Home/Home.scss",
+      "name": "./src/containers/Home/Home.scss",
       "file": "1.css",
       "publicPath": "/1.css"
     },
     {
-      "id": "./src/pages/styles/Home.scss",
-      "name": "./src/pages/styles/Home.scss",
+      "id": "./src/containers/Home/Home.scss",
+      "name": "./src/containers/Home/Home.scss",
       "file": "1.js",
       "publicPath": "/1.js"
     },
     {
-      "id": "./src/pages/styles/Home.scss",
-      "name": "./src/pages/styles/Home.scss",
+      "id": "./src/containers/Home/Home.scss",
+      "name": "./src/containers/Home/Home.scss",
       "file": "1.css.map",
       "publicPath": "/1.css.map"
     },
     {
-      "id": "./src/pages/styles/Home.scss",
-      "name": "./src/pages/styles/Home.scss",
+      "id": "./src/containers/Home/Home.scss",
+      "name": "./src/containers/Home/Home.scss",
       "file": "1.js.map",
       "publicPath": "/1.js.map"
     }
@@ -5813,28 +5813,28 @@
       "publicPath": "/main-bundle.js.map"
     }
   ],
-  "../../pages/Routes": [
+  "../../containers/Routes": [
     {
-      "id": "./src/pages/Routes.js",
-      "name": "./src/pages/Routes.js",
+      "id": "./src/containers/Routes.js",
+      "name": "./src/containers/Routes.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./src/pages/Routes.js",
-      "name": "./src/pages/Routes.js",
+      "id": "./src/containers/Routes.js",
+      "name": "./src/containers/Routes.js",
       "file": "main-bundle.js",
       "publicPath": "/main-bundle.js"
     },
     {
-      "id": "./src/pages/Routes.js",
-      "name": "./src/pages/Routes.js",
+      "id": "./src/containers/Routes.js",
+      "name": "./src/containers/Routes.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./src/pages/Routes.js",
-      "name": "./src/pages/Routes.js",
+      "id": "./src/containers/Routes.js",
+      "name": "./src/containers/Routes.js",
       "file": "main-bundle.js.map",
       "publicPath": "/main-bundle.js.map"
     }

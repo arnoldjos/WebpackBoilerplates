@@ -10,63 +10,56 @@ import configDevServer from '../config/webpack.dev-server.js';
 import configProdClient from '../config/webpack.prod-client.js';
 import configProdServer from '../config/webpack.prod-server.js';
 
-const isProd = process.env.NODE_ENV === 'production';
-const isDev = !isProd;
+const node_env = process.env.NODE_ENV;
 const PORT = process.env.PORT || 3000;
 let isBuilt = false;
 let server = express();
 
 const done = () => {
-	if (isBuilt) return;
+  if (isBuilt) return;
 
-	Loadable.preloadAll().then(() => {
-		server.listen(PORT, () => {
-			isBuilt = true;
-			console.log(
-				`Server listening on http://localhost:${PORT} in ${
-					process.env.NODE_ENV
-				}`
-			);
-		});
-	});
+  Loadable.preloadAll().then(() => {
+    server.listen(PORT, () => {
+      isBuilt = true;
+      console.log(
+        `Server listening on http://localhost:${PORT} in ${
+          process.env.NODE_ENV
+        }`
+      );
+    });
+  });
 };
 
-if (isDev) {
-	const compiler = webpack([configDevClient, configDevServer]);
+if (node_env === 'development') {
+  const compiler = webpack([configDevClient, configDevServer]);
 
-	const clientCompiler = compiler.compilers[0];
-	const serverCompiler = compiler.compilers[1];
+  const clientCompiler = compiler.compilers[0];
+  const serverCompiler = compiler.compilers[1];
 
-	const webpackDevMiddleware = require('webpack-dev-middleware')(
-		compiler,
-		configDevClient.devServer
-	);
+  const webpackDevMiddleware = require('webpack-dev-middleware')(
+    compiler,
+    configDevClient.devServer
+  );
 
-	const webpackHotMiddlware = require('webpack-hot-middleware')(
-		clientCompiler,
-		configDevClient.devServer
-	);
+  const webpackHotMiddlware = require('webpack-hot-middleware')(
+    clientCompiler,
+    configDevClient.devServer
+  );
 
-	server.use(webpackDevMiddleware);
-	server.use(webpackHotMiddlware);
-	server.use(webpackHotServerMiddleware(compiler));
-	console.log('Middleware enabled');
-	done();
+  server.use(webpackDevMiddleware);
+  server.use(webpackHotMiddlware);
+  server.use(webpackHotServerMiddleware(compiler));
+  console.log('Middleware enabled');
+  done();
 } else {
-	webpack([configProdClient, configProdServer]).run((err, stats) => {
-		const clientStats = stats.toJson().children[0];
-		const render = require('../build/prod-server-bundle.js').default;
-		// console.log(
-		// 	stats.toString({
-		// 		colors: true
-		// 	})
-		// );
-		server.use(
-			expressStaticGzip('dist', {
-				enableBrotli: true
-			})
-		);
-		server.use(render({ clientStats }));
-		done();
-	});
+  webpack([configProdClient, configProdServer]).run((err, stats) => {
+    const render = require('../build/prod-server-bundle.js').default;
+    server.use(
+      expressStaticGzip('dist', {
+        enableBrotli: true
+      })
+    );
+    server.use(render());
+    done();
+  });
 }
