@@ -15,11 +15,11 @@ export default () => (
 		<Route path="/about">
 			<UniversalComponent page="About" />
 		</Route>
-		<Route path="/hello">
+		<Route path="/contact">
 			<UniversalComponent page="Contact" />
 		</Route>
-		<Route path="/">
-			<UniversalComponent page="Article" />
+		<Route exact path="/">
+			<UniversalComponent page="Landing" />
 		</Route>
 	</Switch>
 );

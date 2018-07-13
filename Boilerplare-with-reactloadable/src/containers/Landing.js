@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../styles/Home.scss';
+import '../styles/Landing.scss';
 
 class Home extends Component {
 	render() {

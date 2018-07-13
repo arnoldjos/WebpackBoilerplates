@@ -1,38 +1,36 @@
 const path = require('path');
 const webpack = require('webpack');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
-const BrotliPlugin = require('brotli-webpack-plugin');
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+import { ReactLoadablePlugin } from 'react-loadable/webpack';
 
 module.exports = {
 	name: 'client',
+	mode: 'development',
 	entry: {
 		vendor: ['react', 'react-dom'],
-		main: './src/main.js'
+		main: [
+			'react-hot-loader/patch',
+			'babel-runtime/regenerator',
+			'webpack-hot-middleware/client?reload=true',
+			'./src/main.js'
+		]
 	},
-	mode: 'production',
 	output: {
 		filename: '[name].js',
 		chunkFilename: '[name].js',
 		path: path.resolve(__dirname, '../dist'),
 		publicPath: '/'
 	},
-	optimization: {
-		runtimeChunk: {
-			name: 'bootstrap'
-		},
-		splitChunks: {
-			chunks: 'initial',
-			cacheGroups: {
-				vendors: {
-					test: /[\\/]node_modules[\\/]/,
-					name: 'vendor'
-				}
-			}
+	devServer: {
+		contentBase: 'dist',
+		overlay: true,
+		hot: true,
+		stats: {
+			colors: true
 		}
 	},
+	devtool: 'source-map',
 	module: {
 		rules: [
 			{
@@ -74,7 +72,7 @@ module.exports = {
 				test: /\.(jpg|gif|png)$/,
 				use: [
 					{
-						loader: 'url-loader',
+						loader: 'file-loader',
 						options: {
 							name: 'images/[name].[ext]'
 						}
@@ -84,23 +82,17 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractCssChunks(),
-		new OptimizeCssAssetsPlugin({
-			assetNameRegExp: /\.css$/g,
-			cssProcessor: require('cssnano'),
-			cssProcessorOptions: { discardComments: { removeAll: true } },
-			canPrint: true
+		new ReactLoadablePlugin({
+			filename: './dist/react-loadable.json'
 		}),
+		new FriendlyErrorsWebpackPlugin(),
+		new ExtractCssChunks({ hot: true }),
 		new webpack.DefinePlugin({
 			'process.env': {
-				NODE_ENV: JSON.stringify('production'),
+				NODE_ENV: JSON.stringify('development'),
 				WEBPACK: true
 			}
 		}),
-		new UglifyJSPlugin(),
-		new CompressionPlugin({
-			algorithm: 'gzip'
-		}),
-		new BrotliPlugin()
+		new webpack.HotModuleReplacementPlugin()
 	]
 };
