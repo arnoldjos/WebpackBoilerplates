@@ -5,15 +5,16 @@ import Spinner from '../components/UI/Spinner';
 
 import Loadable from 'react-loadable';
 
-const Home = Loadable({
-  loader: () => import('./Home/Home'),
+const About = Loadable({
+  loader: () => import(/* webpackChunkName: "About" */ './About/About'),
   loading: Spinner,
   delay: 200
 });
-const About = Loadable({
-  loader: () => import('./About/About'),
+
+const Home = Loadable({
+  loader: () => import(/* webpackChunkName: "About" */ './Home/Home'),
   loading: Spinner,
-  delay: 200
+  delay: 100
 });
 
 export default () => (

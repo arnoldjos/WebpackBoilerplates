@@ -13,7 +13,7 @@ export default () => (req, res) => {
   let modules = [];
 
   const app = renderToString(
-    <StaticRouter location={req.path} context={context}>
+    <StaticRouter location={req.url} context={context}>
       <Capture report={moduleName => modules.push(moduleName)}>
         <Layout />
       </Capture>
@@ -25,7 +25,8 @@ export default () => (req, res) => {
   let styles = bundles.filter(bundle => bundle.file.endsWith('.css'));
   let scripts = bundles.filter(bundle => bundle.file.endsWith('.js'));
 
-  const html = ` <html lang="en">
+  const html = ` 
+	<html lang="en">
 		<head>
 			<meta charset="UTF-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -52,6 +53,5 @@ export default () => (req, res) => {
 		</body>
 		</html>
 	`;
-  <script src="/vendor-bundle.js" />;
   res.send(html);
 };
