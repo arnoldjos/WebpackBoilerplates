@@ -43,13 +43,14 @@ export default () => (req, res) => {
 		<body>
 			<div id="root">${app}</div>
 			
-			<script src="/vendor-bundle.js"></script>
+			<script src="/vendor.js"></script>
 			${scripts
         .map(script => {
           return `<script src="${script.publicPath}"></script>`;
         })
         .join('\n')}
-			<script src="/main-bundle.js"></script>
+			
+			<script src="/main.js"></script>
 		</body>
 		</html>
 	`;

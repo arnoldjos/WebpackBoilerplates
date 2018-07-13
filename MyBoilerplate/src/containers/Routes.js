@@ -6,20 +6,20 @@ import Spinner from '../components/UI/Spinner';
 import Loadable from 'react-loadable';
 
 const About = Loadable({
-  loader: () => import(/* webpackChunkName: "About" */ './About/About'),
+  loader: () => import('./About/About'),
   loading: Spinner,
   delay: 200
 });
 
 const Home = Loadable({
-  loader: () => import(/* webpackChunkName: "About" */ './Home/Home'),
+  loader: () => import('./Home/Home'),
   loading: Spinner,
-  delay: 100
+  delay: 200
 });
 
 export default () => (
   <Switch>
-    <Route path="/about" component={About} />
     <Route exact path="/" component={Home} />
+    <Route path="/about" component={About} />
   </Switch>
 );

@@ -15,25 +15,25 @@ module.exports = {
   },
   mode: 'production',
   output: {
-    filename: '[name]-bundle.js',
+    filename: '[name].js',
     chunkFilename: '[name].js',
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/'
   },
-  optimization: {
-    runtimeChunk: {
-      name: 'bootstrap'
-    },
-    splitChunks: {
-      chunks: 'initial',
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor'
-        }
-      }
-    }
-  },
+  // optimization: {
+  //   runtimeChunk: {
+  //     name: 'bootstrap'
+  //   },
+  //   splitChunks: {
+  //     chunks: 'initial',
+  //     cacheGroups: {
+  //       vendors: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         name: 'vendor'
+  //       }
+  //     }
+  //   }
+  // },
   module: {
     rules: [
       {
