@@ -1,0 +1,15 @@
+.Home {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 25px;
+
+	&__Image {
+		width: 70%;
+		height: 250px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
