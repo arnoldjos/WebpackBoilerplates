@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import '../styles/Landing.scss';
 
 class Home extends Component {
+	state = {
+		imageLoading: true
+	};
+
 	render() {
 		return (
 			<div className="Home">

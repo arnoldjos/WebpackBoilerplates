@@ -299,30 +299,42 @@
       "publicPath": "/Landing.js.map"
     }
   ],
-  "./_wks": [
+  "./hyphenate": [
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
     }
   ],
   "./dist/react-hot-loader.development.js": [
@@ -1369,588 +1381,184 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "react-dom": [
+  "babel-runtime/helpers/asyncToGenerator": [
     {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
+      "id": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
+      "name": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
+      "id": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
+      "name": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
+      "id": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
+      "name": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/react-dom/index.js",
-      "name": "./node_modules/react-dom/index.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./cjs/react-dom.development.js": [
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/ExecutionEnvironment": [
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/getActiveElement": [
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/getActiveElement.js",
-      "name": "./node_modules/fbjs/lib/getActiveElement.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/shallowEqual": [
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/shallowEqual.js",
-      "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/containsNode": [
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/containsNode.js",
-      "name": "./node_modules/fbjs/lib/containsNode.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./isTextNode": [
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isTextNode.js",
-      "name": "./node_modules/fbjs/lib/isTextNode.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./isNode": [
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/isNode.js",
-      "name": "./node_modules/fbjs/lib/isNode.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/hyphenateStyleName": [
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./hyphenate": [
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/hyphenate.js",
-      "name": "./node_modules/fbjs/lib/hyphenate.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "fbjs/lib/camelizeStyleName": [
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./camelize": [
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "vendor.js",
-      "publicPath": "/vendor.js"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/camelize.js",
-      "name": "./node_modules/fbjs/lib/camelize.js",
-      "file": "vendor.js.map",
-      "publicPath": "/vendor.js.map"
-    }
-  ],
-  "./App": [
-    {
-      "id": "./src/App.js",
-      "name": "./src/App.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./src/App.js",
-      "name": "./src/App.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./src/App.js",
-      "name": "./src/App.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./src/App.js",
-      "name": "./src/App.js",
+      "id": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
+      "name": "./node_modules/babel-runtime/helpers/asyncToGenerator.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "babel-runtime/core-js/object/get-prototype-of": [
+  "../core-js/promise": [
     {
-      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/core-js/promise.js",
+      "name": "./node_modules/babel-runtime/core-js/promise.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/core-js/promise.js",
+      "name": "./node_modules/babel-runtime/core-js/promise.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/core-js/promise.js",
+      "name": "./node_modules/babel-runtime/core-js/promise.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/core-js/promise.js",
+      "name": "./node_modules/babel-runtime/core-js/promise.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "core-js/library/fn/object/get-prototype-of": [
+  "core-js/library/fn/promise": [
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/promise.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "../../modules/es6.object.get-prototype-of": [
+  "../modules/es6.object.to-string": [
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "./_to-object": [
+  "../modules/es6.string.iterator": [
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_string-at": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_to-integer": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -1981,158 +1589,28 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "./_object-gpo": [
+  "./_iter-define": [
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_has": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_shared-key": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_shared": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../../modules/_core": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_global": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -2163,58 +1641,6 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "./_uid": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_object-sap": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
   "./_export": [
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_export.js",
@@ -2237,6 +1663,58 @@
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_export.js",
       "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_export.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_global": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_global.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../modules/_core": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_core.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -2553,340 +2031,28 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "babel-runtime/helpers/classCallCheck": [
+  "./_has": [
     {
-      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
-      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
-      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
-      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
-      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "babel-runtime/helpers/createClass": [
-    {
-      "id": "./node_modules/babel-runtime/helpers/createClass.js",
-      "name": "./node_modules/babel-runtime/helpers/createClass.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/createClass.js",
-      "name": "./node_modules/babel-runtime/helpers/createClass.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/createClass.js",
-      "name": "./node_modules/babel-runtime/helpers/createClass.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/createClass.js",
-      "name": "./node_modules/babel-runtime/helpers/createClass.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../core-js/object/define-property": [
-    {
-      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "core-js/library/fn/object/define-property": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../../modules/es6.object.define-property": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "babel-runtime/helpers/possibleConstructorReturn": [
-    {
-      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../helpers/typeof": [
-    {
-      "id": "./node_modules/babel-runtime/helpers/typeof.js",
-      "name": "./node_modules/babel-runtime/helpers/typeof.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/typeof.js",
-      "name": "./node_modules/babel-runtime/helpers/typeof.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/typeof.js",
-      "name": "./node_modules/babel-runtime/helpers/typeof.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/helpers/typeof.js",
-      "name": "./node_modules/babel-runtime/helpers/typeof.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../core-js/symbol/iterator": [
-    {
-      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "core-js/library/fn/symbol/iterator": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../../modules/es6.string.iterator": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.string.iterator.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_string-at": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_string-at.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_to-integer": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-integer.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "./_iter-define": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-define.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_has.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -3229,6 +2395,84 @@
       "publicPath": "/main.js.map"
     }
   ],
+  "./_shared-key": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared-key.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_shared": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_shared.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_uid": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_uid.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
   "./_enum-bug-keys": [
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_enum-bug-keys.js",
@@ -3307,33 +2551,85 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "react-hot-loader/patch": [
+  "./_wks": [
     {
-      "id": "./node_modules/react-hot-loader/patch.js",
-      "name": "./node_modules/react-hot-loader/patch.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./node_modules/react-hot-loader/patch.js",
-      "name": "./node_modules/react-hot-loader/patch.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./node_modules/react-hot-loader/patch.js",
-      "name": "./node_modules/react-hot-loader/patch.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./node_modules/react-hot-loader/patch.js",
-      "name": "./node_modules/react-hot-loader/patch.js",
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_wks.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "../../modules/web.dom.iterable": [
+  "./_object-gpo": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gpo.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_to-object": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_to-object.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../modules/web.dom.iterable": [
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/web.dom.iterable.js",
       "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/web.dom.iterable.js",
@@ -3433,6 +2729,1334 @@
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-step.js",
       "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-step.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../modules/es6.promise": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_classof": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_classof.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_an-instance": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_an-instance.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_for-of": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_for-of.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_iter-call": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-call.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_is-array-iter": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_is-array-iter.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./core.get-iterator-method": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/core.get-iterator-method.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_species-constructor": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_species-constructor.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_task": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_task.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_invoke": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_invoke.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_microtask": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_microtask.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_new-promise-capability": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_new-promise-capability.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_perform": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_perform.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_user-agent": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_user-agent.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_promise-resolve": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_promise-resolve.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_redefine-all": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_redefine-all.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_set-species": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_set-species.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_iter-detect": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_iter-detect.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../modules/es7.promise.finally": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.finally.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../modules/es7.promise.try": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es7.promise.try.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "./cjs/react-dom.development.js": [
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "fbjs/lib/ExecutionEnvironment": [
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "fbjs/lib/getActiveElement": [
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "fbjs/lib/shallowEqual": [
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "fbjs/lib/containsNode": [
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "./isTextNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "./isNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "fbjs/lib/hyphenateStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "react-hot-loader/patch": [
+    {
+      "id": "./node_modules/react-hot-loader/patch.js",
+      "name": "./node_modules/react-hot-loader/patch.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/react-hot-loader/patch.js",
+      "name": "./node_modules/react-hot-loader/patch.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/react-hot-loader/patch.js",
+      "name": "./node_modules/react-hot-loader/patch.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/react-hot-loader/patch.js",
+      "name": "./node_modules/react-hot-loader/patch.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "fbjs/lib/camelizeStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "./camelize": [
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "vendor.js",
+      "publicPath": "/vendor.js"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "vendor.js.map",
+      "publicPath": "/vendor.js.map"
+    }
+  ],
+  "./App": [
+    {
+      "id": "./src/App.js",
+      "name": "./src/App.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./src/App.js",
+      "name": "./src/App.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./src/App.js",
+      "name": "./src/App.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./src/App.js",
+      "name": "./src/App.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "babel-runtime/core-js/object/get-prototype-of": [
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/core-js/object/get-prototype-of.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "core-js/library/fn/object/get-prototype-of": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/get-prototype-of.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../../modules/es6.object.get-prototype-of": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.get-prototype-of.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "./_object-sap": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-sap.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "babel-runtime/helpers/classCallCheck": [
+    {
+      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "name": "./node_modules/babel-runtime/helpers/classCallCheck.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "babel-runtime/helpers/createClass": [
+    {
+      "id": "./node_modules/babel-runtime/helpers/createClass.js",
+      "name": "./node_modules/babel-runtime/helpers/createClass.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/createClass.js",
+      "name": "./node_modules/babel-runtime/helpers/createClass.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/createClass.js",
+      "name": "./node_modules/babel-runtime/helpers/createClass.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/createClass.js",
+      "name": "./node_modules/babel-runtime/helpers/createClass.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../core-js/object/define-property": [
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "name": "./node_modules/babel-runtime/core-js/object/define-property.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "core-js/library/fn/object/define-property": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/object/define-property.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../../modules/es6.object.define-property": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.define-property.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "babel-runtime/helpers/possibleConstructorReturn": [
+    {
+      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "name": "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../helpers/typeof": [
+    {
+      "id": "./node_modules/babel-runtime/helpers/typeof.js",
+      "name": "./node_modules/babel-runtime/helpers/typeof.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/typeof.js",
+      "name": "./node_modules/babel-runtime/helpers/typeof.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/typeof.js",
+      "name": "./node_modules/babel-runtime/helpers/typeof.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/helpers/typeof.js",
+      "name": "./node_modules/babel-runtime/helpers/typeof.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "../core-js/symbol/iterator": [
+    {
+      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/core-js/symbol/iterator.js",
+      "file": "main.js.map",
+      "publicPath": "/main.js.map"
+    }
+  ],
+  "core-js/library/fn/symbol/iterator": [
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "file": "main.css",
+      "publicPath": "/main.css"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "file": "main.js",
+      "publicPath": "/main.js"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "file": "main.css.map",
+      "publicPath": "/main.css.map"
+    },
+    {
+      "id": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
+      "name": "./node_modules/babel-runtime/node_modules/core-js/library/fn/symbol/iterator.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -3771,32 +4395,6 @@
     {
       "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gopd.js",
       "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/_object-gopd.js",
-      "file": "main.js.map",
-      "publicPath": "/main.js.map"
-    }
-  ],
-  "../../modules/es6.object.to-string": [
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "file": "main.js",
-      "publicPath": "/main.js"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "file": "main.css.map",
-      "publicPath": "/main.css.map"
-    },
-    {
-      "id": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
-      "name": "./node_modules/babel-runtime/node_modules/core-js/library/modules/es6.object.to-string.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
@@ -5905,54 +6503,54 @@
       "publicPath": "/main.js.map"
     }
   ],
-  "../components/UI/Spinner": [
+  "../components/UI/Loading": [
     {
-      "id": "./src/components/UI/Spinner.js",
-      "name": "./src/components/UI/Spinner.js",
+      "id": "./src/components/UI/Loading.js",
+      "name": "./src/components/UI/Loading.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./src/components/UI/Spinner.js",
-      "name": "./src/components/UI/Spinner.js",
+      "id": "./src/components/UI/Loading.js",
+      "name": "./src/components/UI/Loading.js",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./src/components/UI/Spinner.js",
-      "name": "./src/components/UI/Spinner.js",
+      "id": "./src/components/UI/Loading.js",
+      "name": "./src/components/UI/Loading.js",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./src/components/UI/Spinner.js",
-      "name": "./src/components/UI/Spinner.js",
+      "id": "./src/components/UI/Loading.js",
+      "name": "./src/components/UI/Loading.js",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }
   ],
-  "./Spinner.scss": [
+  "./Loading.scss": [
     {
-      "id": "./src/components/UI/Spinner.scss",
-      "name": "./src/components/UI/Spinner.scss",
+      "id": "./src/components/UI/Loading.scss",
+      "name": "./src/components/UI/Loading.scss",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": "./src/components/UI/Spinner.scss",
-      "name": "./src/components/UI/Spinner.scss",
+      "id": "./src/components/UI/Loading.scss",
+      "name": "./src/components/UI/Loading.scss",
       "file": "main.js",
       "publicPath": "/main.js"
     },
     {
-      "id": "./src/components/UI/Spinner.scss",
-      "name": "./src/components/UI/Spinner.scss",
+      "id": "./src/components/UI/Loading.scss",
+      "name": "./src/components/UI/Loading.scss",
       "file": "main.css.map",
       "publicPath": "/main.css.map"
     },
     {
-      "id": "./src/components/UI/Spinner.scss",
-      "name": "./src/components/UI/Spinner.scss",
+      "id": "./src/components/UI/Loading.scss",
+      "name": "./src/components/UI/Loading.scss",
       "file": "main.js.map",
       "publicPath": "/main.js.map"
     }

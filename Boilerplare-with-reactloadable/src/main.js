@@ -6,16 +6,15 @@ import Loadable from 'react-loadable';
 
 import './main.scss';
 
-function render(Component) {
-	Loadable.preloadReady().then(() => {
-		ReactDOM.hydrate(
-			<AppContainer>
-				<Component />
-			</AppContainer>,
-			document.getElementById('root')
-		);
-	});
-}
+const render = async Component => {
+	await Loadable.preloadReady();
+	ReactDOM.hydrate(
+		<AppContainer>
+			<Component />
+		</AppContainer>,
+		document.getElementById('root')
+	);
+};
 render(App);
 
 if (module.hot) {

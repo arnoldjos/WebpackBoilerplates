@@ -3,21 +3,33 @@ import { Route } from 'react-router-dom';
 import { Switch } from 'react-router';
 import Loadable from 'react-loadable';
 
-import Spinner from '../components/UI/Spinner';
+import Loading from '../components/UI/Loading';
+
+const loadableConfig = {
+	loading: Loading,
+	delay: 300,
+	timeout: 10000
+};
 
 const Landing = Loadable({
 	loader: () => import(/* webpackChunkName: "Landing" */ './Landing'),
-	loading: Spinner
+	loading: Loading,
+	delay: 300,
+	timeout: 10000
 });
 
 const Contact = Loadable({
 	loader: () => import(/* webpackChunkName: "Contact" */ './Contact'),
-	loading: Spinner
+	loading: Loading,
+	delay: 300,
+	timeout: 10000
 });
 
 const About = Loadable({
 	loader: () => import(/* webpackChunkName: "About" */ './About'),
-	loading: Spinner
+	loading: Loading,
+	delay: 300,
+	timeout: 10000
 });
 
 export default () => (

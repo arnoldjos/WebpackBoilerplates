@@ -15,11 +15,11 @@ export default ({ clientStats }) => (req, res) => {
 	let modules = [];
 
 	const app = renderToString(
-		<StaticRouter location={req.url} context={context}>
-			<Capture report={moduleName => modules.push(moduleName)}>
+		<Capture report={moduleName => modules.push(moduleName)}>
+			<StaticRouter location={req.url} context={context}>
 				<Layout />
-			</Capture>
-		</StaticRouter>
+			</StaticRouter>
+		</Capture>
 	);
 
 	let bundles = getBundles(stats, modules);

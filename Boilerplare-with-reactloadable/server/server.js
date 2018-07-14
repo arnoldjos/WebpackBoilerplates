@@ -15,18 +15,15 @@ const PORT = process.env.PORT || 3000;
 let isBuilt = false;
 let server = express();
 
-const done = () => {
+const done = async () => {
 	if (isBuilt) return;
 
-	Loadable.preloadAll().then(() => {
-		server.listen(PORT, () => {
-			isBuilt = true;
-			console.log(
-				`Server listening on http://localhost:${PORT} in ${
-					process.env.NODE_ENV
-				}`
-			);
-		});
+	await Loadable.preloadAll();
+	server.listen(PORT, () => {
+		isBuilt = true;
+		console.log(
+			`Server listening on http://localhost:${PORT} in ${process.env.NODE_ENV}`
+		);
 	});
 };
 
