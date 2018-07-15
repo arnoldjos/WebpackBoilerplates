@@ -18,7 +18,7 @@ export default ({ clientStats }) => (req, res) => {
 	const store = configureStore({});
 
 	routes.some(route => {
-		const match = matchPath(req.path, route);
+		const match = matchPath(req.path, route.path);
 
 		if (match) {
 			route.loadData ? promises.push(route.loadData(store)) : null;

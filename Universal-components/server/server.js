@@ -16,6 +16,7 @@ let server = express();
 
 const done = () => {
 	if (isBuilt) return;
+
 	server.listen(PORT, () => {
 		isBuilt = true;
 		console.log(

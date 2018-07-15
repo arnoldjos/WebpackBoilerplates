@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import configureStore from './store';
 
 const store = configureStore(window.INITIAL_STATE);
+window.INITIAL_STATE = {};
 
 import './main.scss';
 

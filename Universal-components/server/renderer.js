@@ -14,10 +14,10 @@ export default ({ clientStats }) => (req, res) => {
 	const context = {};
 
 	let promises = [];
-	const store = configureStore();
+	const store = configureStore({});
 
 	routes.some(route => {
-		const match = matchPath(req.path, route);
+		const match = matchPath(req.path, route.path);
 
 		if (match) {
 			route.loadData ? promises.push(route.loadData(store)) : null;
@@ -27,7 +27,7 @@ export default ({ clientStats }) => (req, res) => {
 	const renderApp = () => {
 		return renderToString(
 			<Provider store={store}>
-				<StaticRouter location={req.url} context={context}>
+				<StaticRouter location={req.path} context={context}>
 					<Layout />
 				</StaticRouter>
 			</Provider>
