@@ -10,7 +10,13 @@ class Home extends Component {
 	}
 
 	render() {
-		return <div className="Home">asdasd</div>;
+		return (
+			<div className="Home">
+				{this.props.data.map(post => {
+					return <div key={post.id}>{post.body}</div>;
+				})}
+			</div>
+		);
 	}
 }
 

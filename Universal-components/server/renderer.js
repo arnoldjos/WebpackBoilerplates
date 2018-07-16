@@ -14,13 +14,13 @@ export default ({ clientStats }) => (req, res) => {
 	const context = {};
 
 	let promises = [];
-	const store = configureStore({});
+	const store = configureStore();
 
 	routes.some(route => {
 		const match = matchPath(req.path, route.path);
 
 		if (match) {
-			route.loadData ? promises.push(route.loadData(store)) : null;
+			route.loadData ? promises.push(store.dispatch(route.loadData())) : null;
 		}
 	});
 
@@ -51,10 +51,11 @@ export default ({ clientStats }) => (req, res) => {
 			</head>
 			<body>
 				<div id="root">${app}</div>
+
+				${js}
 				<script>
 					window.INITIAL_STATE = ${JSON.stringify(store.getState())}
 				</script>
-				${js}
 			</body>
 			</html>
 		`;

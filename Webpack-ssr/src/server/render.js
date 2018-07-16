@@ -49,7 +49,7 @@ export default ({ clientStats }) => (req, res) => {
           <script>
             window.INITIAL_STATE = ${JSON.stringify(store.getState())}
           </script>
-          ${cssHash}
+					${cssHash}
         </body>
       </html>
     `;

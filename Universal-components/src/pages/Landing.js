@@ -7,12 +7,26 @@ import '../styles/Landing.scss';
 import Auxil from '../hoc/Auxil';
 
 class Landing extends Component {
-	state = {
-		loadedItems: []
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			loadedItems: [],
+			doneLoadingImages: false
+		};
+		this.images = [];
+	}
+
+	getDomImage = (node, post) => {
+		this.images.push({ node, post });
 	};
 
 	componentDidMount() {
 		this.props.fetchLanding();
+
+		if (!this.doneLoadingImages) {
+			this.loadAll();
+		}
 	}
 
 	onLoad = newItem => {
@@ -23,77 +37,54 @@ class Landing extends Component {
 		});
 	};
 
-	render() {
-		let posts = (
-			<Auxil>
-				<div className="image-placeholder">&nbsp;</div>
-				<div className="content-placeholder">
-					<div className="content-placeholder__text">&nbsp;</div>
-					<div className="content-placeholder__text">&nbsp;</div>
-					<div className="content-placeholder__text">&nbsp;</div>
-				</div>
-			</Auxil>
-		);
-
-		let loadImages = this.props.data.map(post => {
-			return (
-				<div className="Hidden" key={post.id}>
-					<img
-						onLoad={() => this.onLoad(post)}
-						src="https://newevolutiondesigns.com/images/freebies/fantasy-wallpaper-40.jpg"
-						alt="Image"
-					/>
-				</div>
-			);
+	loadAll = () => {
+		let newItems = [];
+		this.images.map(img => {
+			if (img.node.complete) {
+				newItems.push(img.post);
+			}
 		});
 
+		const updateLoadedItems = [...this.state.loadedItems, ...newItems];
+		this.setState({ loadedItems: updateLoadedItems, doneLoadingImages: true });
+	};
+
+	render() {
 		return (
 			<div className="Home">
-				{this.props.data.length > this.state.loadedItems.length ? (
-					<Auxil>
-						<div className="image-placeholder">&nbsp;</div>
-						<div className="content-placeholder">
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
+				{this.props.data.map(post => {
+					let content = (
+						<div className="Placeholder" key={post.id}>
+							<div className="Placeholder__Image">
+								<img
+									className="Hidden"
+									src="https://newevolutiondesigns.com/images/freebies/fantasy-wallpaper-40.jpg"
+									alt="image"
+									ref={node => this.getDomImage(node, post)}
+									onLoad={() => this.onLoad(post)}
+								/>
+							</div>
+							<div className="Placeholder__text">
+								<p>{post.body}</p>
+							</div>
 						</div>
-						<div className="image-placeholder">&nbsp;</div>
-						<div className="content-placeholder">
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
-						</div>
-						<div className="image-placeholder">&nbsp;</div>
-						<div className="content-placeholder">
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
-							<div className="content-placeholder__text">&nbsp;</div>
-						</div>
-					</Auxil>
-				) : (
-					<TransitionGroup className="post">
-						{this.state.loadedItems.map(post => {
-							return (
-								<CSSTransition
-									classNames="fade"
-									timeout={300}
-									key={post.id}
-									appear={true}
-								>
-									<Auxil>
-										<div className="Home__Image">
-											<img
-												src="https://newevolutiondesigns.com/images/freebies/fantasy-wallpaper-40.jpg"
-												alt="image"
-											/>
-										</div>
-									</Auxil>
-								</CSSTransition>
-							);
-						})}
-					</TransitionGroup>
-				)}
-				{loadImages}
+					);
+
+					if (this.state.loadedItems.find(loaded => loaded.id === post.id)) {
+						content = (
+							<div className="Post" key={post.id}>
+								<div className="Post__Image">
+									<img
+										src="https://newevolutiondesigns.com/images/freebies/fantasy-wallpaper-40.jpg"
+										alt="image"
+									/>
+								</div>
+								<p>{post.body}</p>
+							</div>
+						);
+					}
+					return content;
+				})}
 			</div>
 		);
 	}

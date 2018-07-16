@@ -6,6 +6,7 @@ import flushChunks from 'webpack-flush-chunks';
 import { matchPath } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
+import { fetchLanding } from '../src/store/actions';
 import configureStore from '../src/store';
 import Layout from '../src/components/Layout/Layout';
 import routes from '../src/containers/Routes';
@@ -17,13 +18,13 @@ export default ({ clientStats }) => (req, res) => {
 	let promises = [];
 	const store = configureStore({});
 
-	routes.some(route => {
-		const match = matchPath(req.path, route.path);
+	// routes.some(route => {
+	// 	const match = matchPath(req.path, route.path);
 
-		if (match) {
-			route.loadData ? promises.push(route.loadData(store)) : null;
-		}
-	});
+	// 	if (match) {
+	// 		route.loadData ? promises.push(route.loadData(store)) : null;
+	// 	}
+	// })
 
 	const renderApp = () => {
 		return renderToString(
@@ -66,7 +67,9 @@ export default ({ clientStats }) => (req, res) => {
 		`;
 	};
 
-	Promise.all(promises).then(() => {
-		res.send(template());
-	});
+	// Promise.all(promises).then(() => {
+	// 	res.send(template());
+	// });
+	if (req.path === '/') {
+	}
 };

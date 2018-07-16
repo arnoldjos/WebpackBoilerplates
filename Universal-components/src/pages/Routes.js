@@ -5,14 +5,16 @@ const routes = [
 		path: '/',
 		page: 'Landing',
 		exact: true,
-		loadData: ({ dispatch }) => dispatch(fetchLanding())
+		loadData: () => fetchLanding()
 	},
 	{
 		path: '/about',
+		exact: true,
 		page: 'About'
 	},
 	{
 		path: '/contact',
+		exact: true,
 		page: 'Contact'
 	}
 ];
