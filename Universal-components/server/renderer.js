@@ -27,7 +27,7 @@ export default ({ clientStats }) => (req, res) => {
 	const renderApp = () => {
 		return renderToString(
 			<Provider store={store}>
-				<StaticRouter location={req.path} context={context}>
+				<StaticRouter location={req.originalUrl} context={context}>
 					<Layout />
 				</StaticRouter>
 			</Provider>
